@@ -1,0 +1,56 @@
+.title {
+    margin: 30px 0;
+    font-size: 30px;
+}
+
+/* 問題1 タブ */
+.tab {
+    width: 500px;
+}
+.tab-menu {
+    display: flex;
+}
+.tab-menu__item {
+    list-style: none;
+    width: 100px;
+    padding: 10px 0;
+    border-top: 1px solid #000000;
+    border-right: 1px solid #000000;
+    border-left: 1px solid #000000;
+    text-align: center;
+    cursor: pointer;
+}
+.tab-menu__item:not(:first-child) {
+    border-left: none;
+}
+.tab-menu__item.active {
+    background: #000000;
+    color: white;
+}
+.tab-content {
+    height: 200px;
+    border: 1px solid #000000;
+}
+
+/* 問題2 モーダルウィンドウ */
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .5);
+}
+.modal__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.modal__content-inner {
+    width: 500px;
+    padding: 50px;
+    background-color: white;
+    text-align: center;
+}
